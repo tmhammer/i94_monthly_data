@@ -1,19 +1,19 @@
-# This is a template for a Ruby scraper on morph.io (https://morph.io)
-# including some code snippets below that you should find helpful
+require './dropbox_client'
+require './excel_parser'
+require 'scraperwiki'
 
-# require 'scraperwiki'
-# require 'mechanize'
-#
-# agent = Mechanize.new
-#
-# # Read in a page
-# page = agent.get("http://foo.com")
-#
-# # Find somehing on the page using css selectors
-# p page.at('div.content')
-#
+client = DropboxClientWrapper.new
+file_paths = client.get_file_paths
+
+data = []
+file_paths.each do |path|
+  client.download_file(path)
+  path.gsub!('/', '')
+  data.concat ExcelParser.parse(path)
+end
+
 # # Write out to the sqlite database using scraperwiki library
-# ScraperWiki.save_sqlite(["name"], {"name" => "susan", "occupation" => "software developer"})
+ScraperWiki.save_sqlite([:date, :i94_code, :country], data)
 #
 # # An arbitrary query against the database
 # ScraperWiki.select("* from data where 'name'='peter'")
