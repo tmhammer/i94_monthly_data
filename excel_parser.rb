@@ -11,7 +11,7 @@ class ExcelParser
     @spreadsheet = Roo::Spreadsheet.open(@path)
     @spreadsheet.parse(clean: true)
 
-    headers = { i94_code: /^(I-94CountryCode|Code)$/,
+    headers = { i94_code: /^(I-94CountryCode|CountryCode|Code)$/,
                            country: /Country of Residence/,
                            "Jan" => /Jan/,
                            "Feb" => /Feb/,
@@ -29,41 +29,39 @@ class ExcelParser
 
     rows = @spreadsheet.parse(headers)
 
-    rows.reject! do |row|
-      row[:i94_code].nil? | !is_valid_country_term?(row[:country])
-    end
-    rows.delete_at(0) # Remove headers row
+    rows = filter_rows(rows)
 
     return transform_rows(rows)
   end
 
   def self.transform_rows(rows)
     year = @path.split('.')[0].to_i
+
     new_rows = []
     rows.each do |row|
       country = row.delete(:country)
       i94_code = row.delete(:i94_code)
+
       row.each do |k, v|
         date = Date.new(year, Date::ABBR_MONTHNAMES.index(k), 1) 
         date_str = date.strftime("%Y-%m")
         new_rows.push({ date: date_str, i94_code: i94_code, country: country, amount: v })
       end
     end
+
     new_rows
   end
 
-  def self.is_valid_country_term?(country)
-    excluded_country_terms = [
-      'MEXICO Total (Banco de Mexico)',
-      'MEXICO (EXCL LAND)',
-      'MEXICO Land (Banco de Mexico)',
-      'MEXICO'
-    ]
+  def self.filter_rows(rows)
+    rows.reject! { |row| row[:country].nil? } # Remove nils first
 
-    return false if country.nil?
-    return false if country.match(/INVALID:/)
-    return false if excluded_country_terms.include?(country)
-    return true
+    # Remove invalid data:  (everything below MEXICO)
+    split_index = rows.index{|row| row[:country].match(/MEXICO/)}
+    rows.slice!(split_index..rows.size-1)
+
+    rows.reject! { |row| row[:country].match(/INVALID/) } # Catch any Invalids that slipped through
+
+    rows.delete_at(0) # Remove headers row
+    rows
   end
-
 end

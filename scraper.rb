@@ -5,12 +5,27 @@ require 'scraperwiki'
 client = DropboxClientWrapper.new
 file_paths = client.get_file_paths
 
+#File.open('countries.yaml', 'w'){|f| }
+countries = {}
+
 data = []
 file_paths.each do |path|
   client.download_file(path)
   path.gsub!('/', '')
-  data.concat ExcelParser.parse(path)
+
+  year = path.split('.')[0]
+  countries[year] = []
+
+  new_data = ExcelParser.parse(path)
+  new_data.each do |row|
+    countries[year].push({row[:i94_code].to_i.to_s => row[:country]})
+  end
+  countries[year].uniq!
+
+  data.concat new_data
 end
+
+#File.open('countries.yaml', 'a'){ |f| f.write(countries.to_yaml) }
 
 # # Write out to the sqlite database using scraperwiki library
 ScraperWiki.save_sqlite([:date, :i94_code, :country], data)
