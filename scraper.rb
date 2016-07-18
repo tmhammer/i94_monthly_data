@@ -14,13 +14,12 @@ file_paths.each do |path|
   path.gsub!('/', '')
 
   year = path.split('.')[0]
-  countries[year] = []
+  countries[year] = {}
 
   new_data = ExcelParser.parse(path)
   new_data.each do |row|
-    countries[year].push({row[:i94_code].to_i.to_s => row[:country]})
+    countries[year][row[:i94_code].to_i.to_s] = row[:country]
   end
-  countries[year].uniq!
 
   data.concat new_data
 end

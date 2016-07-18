@@ -57,7 +57,7 @@ class ExcelParser
 
     # Remove invalid data:  (everything below MEXICO)
     split_index = rows.index{|row| row[:country].match(/MEXICO/)}
-    rows.slice!(split_index..rows.size-1)
+    rows.slice!(split_index..rows.size-1) unless split_index.nil?
 
     rows.reject! { |row| row[:country].match(/INVALID/) } # Catch any Invalids that slipped through
 
