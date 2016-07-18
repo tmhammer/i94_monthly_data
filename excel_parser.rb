@@ -1,8 +1,6 @@
 require 'roo' 
 require 'roo-xls'          
 require 'open-uri'
-require 'csv'
-require 'yaml'
 
 class ExcelParser
 
