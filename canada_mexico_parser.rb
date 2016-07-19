@@ -31,7 +31,7 @@ class CanadaMexicoParser
           date = Date.new(k.to_i, Date::MONTHNAMES.index(month), 1)
           date_str = date.strftime("%Y-%m")
           amount = @spreadsheet.sheet(country).row(row_num)[v]
-          transformed_rows.push({ date: date_str, i94_code: code.to_i, country: country.upcase, amount: amount.to_i })
+          transformed_rows.push({ date: date_str, i94_code: code.to_i, country: country.upcase, amount: amount.to_i }) unless amount.nil?
         end
       end
     end
