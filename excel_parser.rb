@@ -43,7 +43,7 @@ class ExcelParser
       row.each do |k, v|
         date = Date.new(year, Date::ABBR_MONTHNAMES.index(k), 1) 
         date_str = date.strftime("%Y-%m")
-        new_rows.push({ date: date_str, i94_code: i94_code, country: country, amount: v })
+        new_rows.push({ date: date_str, i94_code: i94_code.to_i, country: country, amount: v.to_i })
       end
     end
 
