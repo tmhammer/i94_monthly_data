@@ -15,6 +15,8 @@ class CanadaMexicoParser
     data = []
     data.concat(transform_rows(headers, 'Canada', 574))
     data.concat(transform_rows(headers, 'Mexico', 582))
+    data.concat(transform_rows(headers, 'Overseas', 0))
+    data.concat(transform_rows(headers, 'International', 0))
 
     return data
   end
