@@ -4,6 +4,18 @@ require 'open-uri'
 
 class ExcelParser
 
+  REGIONS = [
+    'WESTERN EUROPE',
+    'EASTERN EUROPE',
+    'ASIA',
+    'MIDDLE EAST',
+    'AFRICA',
+    'OCEANIA',
+    'SOUTH AMERICA',
+    'CENTRAL AMERICA',
+    'CARIBBEAN'
+  ]
+
   def self.parse(path)
     @path = path
     @spreadsheet = Roo::Spreadsheet.open(@path)
@@ -37,13 +49,17 @@ class ExcelParser
 
     new_rows = []
     rows.each do |row|
-      country = row.delete(:country)
+      country_or_region = row.delete(:country)
       i94_code = row.delete(:i94_code)
 
       row.each do |k, v|
         date = Date.new(year, Date::ABBR_MONTHNAMES.index(k), 1) 
         date_str = date.strftime("%Y-%m")
-        new_rows.push({ date: date_str, i94_code: i94_code.to_i, country: country, amount: v.to_i }) unless v.nil?
+
+        hash = parse_country_or_region(country_or_region)
+        hash = hash.merge({ date: date_str, i94_code: i94_code.to_i, amount: v.to_i }) unless v.nil?
+
+        new_rows.push(hash) unless v.nil?
       end
     end
 
@@ -61,5 +77,16 @@ class ExcelParser
 
     rows.delete_at(0) # Remove headers row
     rows
+  end
+
+  def self.parse_country_or_region(country_or_region)
+    if REGIONS.include?(country_or_region)
+      region = country_or_region
+      country = ""
+    else
+      country = country_or_region
+      region = ""
+    end
+    { i94_country: country, i94_region: region }
   end
 end

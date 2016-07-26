@@ -21,19 +21,22 @@ class CanadaMexicoParser
     return data
   end
 
-  def self.transform_rows(headers, country, code)
+  def self.transform_rows(headers, country_or_region, code)
     transformed_rows = []
     # Iterate over rows we need:
     (5..19).each do |row_num|
       # Only look at row if it starts with a month:
-      if Date::MONTHNAMES.include?(@spreadsheet.sheet(country).row(row_num)[0])
-        month = @spreadsheet.sheet(country).row(row_num)[0]
+      if Date::MONTHNAMES.include?(@spreadsheet.sheet(country_or_region).row(row_num)[0])
+        month = @spreadsheet.sheet(country_or_region).row(row_num)[0]
         # Retrieve amount for each year across row:
         headers.each do |k, v|
           date = Date.new(k.to_i, Date::MONTHNAMES.index(month), 1)
           date_str = date.strftime("%Y-%m")
-          amount = @spreadsheet.sheet(country).row(row_num)[v]
-          transformed_rows.push({ date: date_str, i94_code: code.to_i, country: country.upcase, amount: amount.to_i }) unless amount.nil?
+          amount = @spreadsheet.sheet(country_or_region).row(row_num)[v]
+
+          hash = parse_country_or_region(country_or_region)
+
+          transformed_rows.push(hash.merge({ date: date_str, i94_code: code.to_i, amount: amount.to_i })) unless amount.nil?
         end
       end
     end
@@ -41,4 +44,14 @@ class CanadaMexicoParser
     return transformed_rows
   end
 
+  def self.parse_country_or_region(country_or_region)
+    if ['Overseas', 'International'].include?(country_or_region)
+      region = country_or_region
+      country = ""
+    else
+      country = country_or_region
+      region = ""
+    end
+    { i94_country: country.upcase, i94_region: region.upcase }
+  end
 end
