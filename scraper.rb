@@ -17,4 +17,4 @@ file_paths.each do |path|
 end
 
 # # Write out to the sqlite database using scraperwiki library
-ScraperWiki.save_sqlite([:date, :i94_code, :country], data)
+ScraperWiki.save_sqlite([:date, :i94_code, :i94_country, :i94_region], data)
