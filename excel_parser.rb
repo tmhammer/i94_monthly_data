@@ -16,10 +16,11 @@ class ExcelParser
     'CARIBBEAN'
   ]
 
-  def self.parse(path)
+  def self.parse(path, region_dictionary)
     @path = path
     @spreadsheet = Roo::Spreadsheet.open(@path)
     @spreadsheet.parse(clean: true)
+    @region_dictionary = region_dictionary
 
     headers = { i94_code: /^(I-94CountryCode|CountryCode|Code)$/,
                            country: /Country of Residence/,
@@ -56,7 +57,7 @@ class ExcelParser
         date = Date.new(year, Date::ABBR_MONTHNAMES.index(k), 1) 
         date_str = date.strftime("%Y-%m")
 
-        hash = parse_country_or_region(country_or_region)
+        hash = parse_country_or_region(country_or_region, year)
         hash = hash.merge({ date: date_str, i94_code: i94_code.to_i, amount: v.to_i }) unless v.nil?
 
         new_rows.push(hash) unless v.nil?
@@ -79,13 +80,13 @@ class ExcelParser
     rows
   end
 
-  def self.parse_country_or_region(country_or_region)
+  def self.parse_country_or_region(country_or_region, year)
     if REGIONS.include?(country_or_region)
       region = country_or_region
       country = ""
     else
       country = country_or_region
-      region = ""
+      region = @region_dictionary.key?(country_or_region) ? @region_dictionary[country_or_region][year.to_s] : ""
     end
     { i94_country: country, i94_region: region }
   end
