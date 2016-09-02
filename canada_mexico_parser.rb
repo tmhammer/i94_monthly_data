@@ -46,12 +46,12 @@ class CanadaMexicoParser
 
   def self.parse_country_or_region(country_or_region)
     if ['Overseas', 'International'].include?(country_or_region)
-      region = country_or_region
-      country = ""
+      region = [country_or_region]
     else
-      country = country_or_region
-      region = ""
+      region = ['North America', 'Non-Visa Waiver', 
+        'APEC (Asia Pacific Economic Cooperation)', 
+        'OECD (Organization for Economic Cooperation and Development)']
     end
-    { i94_country: country.upcase, i94_region: region.upcase }
+    { i94_country_or_region: country_or_region, ntto_groups: region }
   end
 end
