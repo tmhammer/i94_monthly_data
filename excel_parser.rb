@@ -127,10 +127,10 @@ class ExcelParser
       hash[:ntto_groups].push 'Non-Visa Waiver'
     end
 
-    hash[:ntto_groups].push('APEC (Asia Pacific Economic Cooperation)') if @ntto_groups[:apec].include?(hash[:i94_country_or_region])
-    hash[:ntto_groups].push('EU (European Union)') if @ntto_groups[:eu].include?(hash[:i94_country_or_region])
-    hash[:ntto_groups].push 'OECD (Organization for Economic Cooperation and Development)' if @ntto_groups[:oecd].include?(hash[:i94_country_or_region])
-    hash[:ntto_groups].push 'PATA (Pacific Asia Travel Association)' if @ntto_groups[:pata].include?(hash[:i94_country_or_region])
+    hash[:ntto_groups].push('APEC') if @ntto_groups[:apec].include?(hash[:i94_country_or_region])
+    hash[:ntto_groups].push('EU') if @ntto_groups[:eu].include?(hash[:i94_country_or_region])
+    hash[:ntto_groups].push('OECD') if @ntto_groups[:oecd].include?(hash[:i94_country_or_region])
+    hash[:ntto_groups].push('PATA') if @ntto_groups[:pata].include?(hash[:i94_country_or_region])
 
     hash[:ntto_groups].push 'Overseas'
   end

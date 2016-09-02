@@ -49,8 +49,8 @@ class CanadaMexicoParser
       region = [country_or_region]
     else
       region = ['North America', 'Non-Visa Waiver', 
-        'APEC (Asia Pacific Economic Cooperation)', 
-        'OECD (Organization for Economic Cooperation and Development)']
+        'APEC', 
+        'OECD']
     end
     { i94_country_or_region: country_or_region, ntto_groups: region }
   end
