@@ -8,8 +8,8 @@ class DropboxClientWrapper
     @client = DropboxClient.new(access_token)
   end
 
-  def get_file_paths
-    metadata = @client.metadata('/')
+  def get_file_paths(position)
+    metadata = @client.metadata(position)
     metadata["contents"].map do |hash|
       hash["path"]
     end

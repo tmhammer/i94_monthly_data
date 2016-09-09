@@ -1,20 +1,13 @@
 require 'roo' 
 require 'roo-xls'          
 require 'open-uri'
+require './decapitalize'
 
 class ExcelParser
+  extend Decapitalize
 
-  REGIONS = [
-    'WESTERN EUROPE',
-    'EASTERN EUROPE',
-    'ASIA',
-    'MIDDLE EAST',
-    'AFRICA',
-    'OCEANIA',
-    'SOUTH AMERICA',
-    'CENTRAL AMERICA',
-    'CARIBBEAN'
-  ]
+  REGIONS = ['Western Europe', 'Eastern Europe', 'Asia', 'Middle East', 'Africa',
+    'Oceania', 'South America', 'Central America', 'Caribbean']
 
   def self.parse(path, region_dictionary)
     @path = path
@@ -48,11 +41,11 @@ class ExcelParser
 
   def self.build_ntto_groups
     ntto_groups = {}
-    ntto_groups[:visa_waiver] = YAML.load_file('visa_waiver_countries.yaml')
-    ntto_groups[:apec] = YAML.load_file('apec_countries.yaml')
-    ntto_groups[:eu] = YAML.load_file('eu_countries.yaml')
-    ntto_groups[:oecd] = YAML.load_file('oecd_countries.yaml')
-    ntto_groups[:pata] = YAML.load_file('pata_countries.yaml')
+    ntto_groups[:visa_waiver] = YAML.load_file('fixtures/visa_waiver_countries.yaml')
+    ntto_groups[:apec] = YAML.load_file('fixtures/apec_countries.yaml')
+    ntto_groups[:eu] = YAML.load_file('fixtures/eu_countries.yaml')
+    ntto_groups[:oecd] = YAML.load_file('fixtures/oecd_countries.yaml')
+    ntto_groups[:pata] = YAML.load_file('fixtures/pata_countries.yaml')
 
     ntto_groups
   end
@@ -70,7 +63,7 @@ class ExcelParser
         date_str = date.strftime("%Y-%m")
 
         hash = parse_country_or_region(country_or_region, year)
-        hash = hash.merge({ date: date_str, i94_code: i94_code.to_i, amount: v.to_i }) unless v.nil?
+        hash = hash.merge({ date: date_str, i94_code: i94_code.to_i, total_amount: v.to_i }) unless v.nil?
         add_ntto_groups(hash)
 
         new_rows.push(hash) unless v.nil?
@@ -102,22 +95,6 @@ class ExcelParser
       regions = @region_dictionary.key?(country_or_region) ? [@region_dictionary[country_or_region][year.to_s]] : []
     end
     { i94_country_or_region: country_or_region, ntto_groups: regions }
-  end
-
-  def self.decapitalize(country_or_region)
-    country_or_region_dup = country_or_region.dup
-    country_or_region.scan(/([A-Z]+)/).each do |word|
-      word = word.first
-
-      next if ( word == 'USSR' || word == 'PRC' )
-
-      new_word = word.downcase
-      new_word = new_word.capitalize unless ( new_word == "of" || new_word == "and" )
-
-      country_or_region_dup.sub!(word, new_word)
-    end
-
-    return country_or_region_dup
   end
 
   def self.add_ntto_groups(hash)

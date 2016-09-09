@@ -36,7 +36,7 @@ class CanadaMexicoParser
 
           hash = parse_country_or_region(country_or_region)
 
-          transformed_rows.push(hash.merge({ date: date_str, i94_code: code.to_i, amount: amount.to_i })) unless amount.nil?
+          transformed_rows.push(hash.merge({ date: date_str, i94_code: code.to_i, total_amount: amount.to_i })) unless amount.nil?
         end
       end
     end

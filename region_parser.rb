@@ -1,11 +1,13 @@
 require 'roo' 
 require 'roo-xls'          
 require 'open-uri'
+require './decapitalize'
 
 class RegionParser
+  extend Decapitalize
 
-  REGIONS = ['WESTERN EUROPE', 'EASTERN EUROPE', 'ASIA', 'MIDDLE EAST', 'AFRICA',
-    'OCEANIA', 'SOUTH AMERICA', 'CENTRAL AMERICA', 'CARIBBEAN']
+  REGIONS = ['Western Europe', 'Eastern Europe', 'Asia', 'Middle East', 'Africa',
+    'Oceania', 'South America', 'Central America', 'Caribbean']
 
   def self.parse
     @path = "regions.xlsx"
@@ -30,6 +32,7 @@ class RegionParser
   def self.build_dictionary(entries, data, year)
       region = ""
       entries.each do |entry|
+        entry = decapitalize(entry)
         if REGIONS.include?(entry)
           region = entry
         else
@@ -38,5 +41,4 @@ class RegionParser
         end
       end
   end
-
 end
