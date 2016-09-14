@@ -17,7 +17,7 @@ class VisaTypeParser
                            student: "STUDENT",
                         }
 
-    rows = @spreadsheet.sheet('Table D').parse(headers)
+    rows = @spreadsheet.sheet(3).parse(headers)
 
     filter_rows(rows)
 
@@ -39,9 +39,9 @@ class VisaTypeParser
     rows.each do |row|
       hash[decapitalize(row[:country_or_region])] = {
         date_str => {
-          business_visa_amount: row[:business],
-          pleasure_visa_amount: row[:pleasure],
-          student_visa_amount: row[:student]
+          business_visa_amount: row[:business].to_i,
+          pleasure_visa_amount: row[:pleasure].to_i,
+          student_visa_amount: row[:student].to_i
       }}
     end
 
