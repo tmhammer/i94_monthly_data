@@ -3,7 +3,7 @@ require './excel_parser'
 require './canada_mexico_parser'
 require './region_parser'
 require './visa_type_parser'
-#require 'scraperwiki'
+require 'scraperwiki'
 require 'pp'
 require 'csv'
 
@@ -30,10 +30,10 @@ def main
 
   data.each { |entry| add_visa_type_fields(entry, visa_type_dictionary) }
 
-  write_csv_file(data)
+  #write_csv_file(data)
 
   # # Write out to the sqlite database using scraperwiki library
-  #ScraperWiki.save_sqlite([:date, :i94_code, :i94_country, :i94_region], data)
+  ScraperWiki.save_sqlite([:date, :i94_code, :i94_country, :i94_region], data)
 end
 
 def add_visa_type_fields(entry, visa_type_hash)
