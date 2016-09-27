@@ -1,0 +1,162 @@
+{
+"Japan": {
+    "ports_arrivals": [
+      {
+        "port": "Agana, GU",
+        "amount": 61817
+      },
+      {
+        "port": "Atlanta, GA",
+        "amount": 1911
+      },
+      {
+        "port": "Baltimore, MD",
+        "amount": 6
+      },
+      {
+        "port": "Blaine, WA",
+        "amount": 287
+      },
+      {
+        "port": "Boston, MA",
+        "amount": 55
+      },
+      {
+        "port": "Brownsville, TX",
+        "amount": 1
+      },
+      {
+        "port": "Calexico, CA",
+        "amount": 1
+      },
+      {
+        "port": "Charlotte Amalie,VI",
+        "amount": 7
+      },
+      {
+        "port": "Chicago, IL",
+        "amount": 7059
+      },
+      {
+        "port": "Cincinnati, OH",
+        "amount": 12
+      },
+      {
+        "port": "Dallas, TX",
+        "amount": 1945
+      },
+      {
+        "port": "Detroit, MI",
+        "amount": 5048
+      },
+      {
+        "port": "El Paso, TX",
+        "amount": 10
+      },
+      {
+        "port": "Hidalgo, TX",
+        "amount": 2
+      },
+      {
+        "port": "Honolulu, HI",
+        "amount": 96322
+      },
+      {
+        "port": "Houston, TX",
+        "amount": 2364
+      },
+      {
+        "port": "Laredo, TX",
+        "amount": 14
+      },
+      {
+        "port": "Las Vegas, NV",
+        "amount": 2
+      },
+      {
+        "port": "Los Angeles, CA",
+        "amount": 23016
+      },
+      {
+        "port": "Miami, FL",
+        "amount": 590
+      },
+      {
+        "port": "Minn./St. Paul, MN",
+        "amount": 998
+      },
+      {
+        "port": "New York, NY",
+        "amount": 10460
+      },
+      {
+        "port": "Newark, NJ",
+        "amount": 2427
+      },
+      {
+        "port": "Niagara Falls, NY",
+        "amount": 142
+      },
+      {
+        "port": "Nogales, AZ",
+        "amount": 1
+      },
+      {
+        "port": "Orlando, FL",
+        "amount": 8
+      },
+      {
+        "port": "Philadelphia, PA",
+        "amount": 11
+      },
+      {
+        "port": "Phoenix, AZ",
+        "amount": 40
+      },
+      {
+        "port": "Pt Everglades, FL",
+        "amount": 6
+      },
+      {
+        "port": "Portland, OR",
+        "amount": 28
+      },
+      {
+        "port": "San Diego, CA",
+        "amount": 30
+      },
+      {
+        "port": "San Francisco, CA",
+        "amount": 16699
+      },
+      {
+        "port": "San Juan, PR",
+        "amount": 32
+      },
+      {
+        "port": "Sanford, FL",
+        "amount": 2
+      },
+      {
+        "port": "Seattle, WA",
+        "amount": 2884
+      },
+      {
+        "port": "Tampa, FL",
+        "amount": 1
+      },
+      {
+        "port": "Washington, DC",
+        "amount": 2019
+      },
+      {
+        "port": "Other",
+        "amount": 5366
+      },
+      {
+        "port": "Unknown/Blank",
+        "amount": 550
+      }
+    ]
+  }
+}

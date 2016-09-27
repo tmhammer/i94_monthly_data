@@ -10,3 +10,5 @@ gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git",
 gem "dropbox-sdk"
 gem "roo"
 gem "roo-xls"
+gem "rspec"
+gem "simplecov"

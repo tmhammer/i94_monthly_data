@@ -9,9 +9,8 @@ class RegionParser
   REGIONS = ['Western Europe', 'Eastern Europe', 'Asia', 'Middle East', 'Africa',
     'Oceania', 'South America', 'Central America', 'Caribbean']
 
-  def self.parse
-    @path = "regions.xlsx"
-    @spreadsheet = Roo::Spreadsheet.open(@path)
+  def self.parse(path)
+    @spreadsheet = Roo::Spreadsheet.open(path)
     @spreadsheet.parse(clean: true)
 
     data = {}

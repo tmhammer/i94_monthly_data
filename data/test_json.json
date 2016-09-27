@@ -1,0 +1,53 @@
+[
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "1999-01",
+    "i94_code": 1,
+    "total_amount": 590429,
+    "business_visa_amount": "",
+    "pleasure_visa_amount": "",
+    "student_visa_amount": "",
+    "ports": {
+      "agana": { "full_name": "AGANA, GU", "amount": 23 },
+      "new_york": { "full_name": "NEW YORK, NY", "amount": 500 }
+    }
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "1999-02",
+    "i94_code": 1,
+    "total_amount": 679950,
+    "business_visa_amount": "",
+    "pleasure_visa_amount": "",
+    "student_visa_amount": "",
+    "ports": {
+      "agana": { "full_name": "AGANA, GU", "amount": 20 },
+      "new_york": { "full_name": "NEW YORK, NY", "amount": 400 }
+    }
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "1999-03",
+    "i94_code": 1,
+    "total_amount": 907751,
+    "business_visa_amount": "",
+    "pleasure_visa_amount": "",
+    "student_visa_amount": "",
+    "ports": {
+      "agana": { "full_name": "AGANA, GU", "amount": 10 },
+      "new_york": { "full_name": "NEW YORK, NY", "amount": 300 }
+    }
+  }
+]

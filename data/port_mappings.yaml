@@ -1,0 +1,52 @@
+"NEW YORK, NY": new_york
+"MIAMI, FL": miami
+"LOS ANGELES, CA": los_angeles
+"HONOLULU, HI": honolulu
+"NEWARK, NJ": newark
+"SAN FRANCISCO, CA": san_francisco
+"CHICAGO, IL": chicago
+"ORLANDO, FL": orlando
+"AGANA, GU": agana
+"ATLANTA, GA": atlanta
+"WASHINGTON, DC": washington
+"HOUSTON, TX": houston
+"BOSTON, MA": boston
+"FT. LAUDERDALE, FL": ft_lauderdale
+"DALLAS, TX": dallas
+
+"SEATTLE, WA": seattle
+"LAS VEGAS, NV": las_vegas
+"DETROIT, MI": detroit
+"PHILADELPHIA, PA": philadelphia
+"BLAINE, WA": blaine
+
+"NIAGARA FALLS, NY": niagara_falls
+"MINN./ST. PAUL, MN": minn_st_paul
+"SANFORD, FL": sanford
+"CHAMPLAIN, NY": champlain
+"PEACE BRIDGE, NY": peace_bridge
+"SAN JUAN, PR": san_juan
+"TAMPA, FL": tampa
+"SAN DIEGO, CA": san_diego
+"PHOENIX, AZ": phoenix
+"LEWISTON, NY": lewiston
+"PORTLAND, OR": portland
+"HIGHGATE SPRINGS, VT": highgate_springs
+"PT HURON, MI": pt_huron
+"LYNDEN, WA": lyden
+"BALTIMORE, MD": baltimore
+"BUFFALO, NY": buffalo
+"CINCINNATI, OH": cincinnati
+"SAN ANTONIO, TX": san_antonio
+"PT EVERGLADES, FL": pt_everglades
+"CHARLOTTE AMALIE,VI": charlotte_amalie
+"CALEXICO, CA": calexico
+"HIDALGO, TX": hidalgo
+"NOGALES, AZ": nogales
+"LAREDO, TX": laredo
+"BROWNSVILLE, TX": brownsville
+"EAGLE PASS, TX": eagle_pass
+"EL PASO, TX": el_paso
+
+"OTHER": other
+"UNKNOWN/BLANK": unknown

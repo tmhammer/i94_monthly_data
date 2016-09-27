@@ -5,13 +5,12 @@ require 'open-uri'
 class CanadaMexicoParser
 
   def self.parse(path)
-    @path = path
-    @spreadsheet = Roo::Spreadsheet.open(@path)
+    @spreadsheet = Roo::Spreadsheet.open(path)
     @spreadsheet.parse(clean: true)
 
     headers = {}  #Get valid headers (years) from 4th row:
     @spreadsheet.row(4).each_with_index{ |header, i| headers[header] = i unless header.nil? }
-
+    
     data = []
     data.concat(transform_rows(headers, 'Canada', 574))
     data.concat(transform_rows(headers, 'Mexico', 582))
@@ -36,7 +35,7 @@ class CanadaMexicoParser
 
           hash = parse_country_or_region(country_or_region)
 
-          transformed_rows.push(hash.merge({ date: date_str, i94_code: code.to_i, total_amount: amount.to_i })) unless amount.nil?
+          transformed_rows.push(hash.merge({ date: date_str, total_arrivals: amount.to_i })) unless amount.nil?
         end
       end
     end

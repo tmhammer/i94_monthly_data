@@ -1,0 +1,61 @@
+[
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 685995
+  },
+  {
+    "i94_country_or_region": "Austria",
+    "ntto_groups": [
+      "Western Europe",
+      "Visa Waiver",
+      "EU",
+      "OECD",
+      "Overseas"
+    ],
+    "date": "2015-02",
+    "total_arrivals": 12693
+  },
+  {
+    "i94_country_or_region": "Mexico",
+    "ntto_groups": [
+      "North America",
+      "Non-Visa Waiver",
+      "APEC",
+      "OECD"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 1458865
+  },
+  {
+    "i94_country_or_region": "Canada",
+    "ntto_groups": [
+      "North America",
+      "Non-Visa Waiver",
+      "APEC",
+      "OECD"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 1566703
+  },
+  {
+    "i94_country_or_region": "Overseas",
+    "ntto_groups": [
+      "Overseas"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 2456329
+  },
+  {
+    "i94_country_or_region": "International",
+    "ntto_groups": [
+      "International"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 5481897
+  }
+]

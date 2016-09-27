@@ -1,0 +1,187 @@
+[
+  {
+    "i94_country_or_region": "Japan",
+    "ntto_groups": [
+      "Asia",
+      "Visa Waiver",
+      "APEC",
+      "OECD",
+      "Overseas"
+    ],
+    "date": "2015-04",
+    "total_arrivals": 258651,
+    "business_visa_arrivals": 42133,
+    "pleasure_visa_arrivals": 214220,
+    "student_visa_arrivals": 2298,
+    "ports_arrivals": [
+      {
+        "port": "Agana, GU",
+        "amount": 269996
+      },
+      {
+        "port": "Atlanta, GA",
+        "amount": 8612
+      },
+      {
+        "port": "Baltimore, MD",
+        "amount": 38
+      },
+      {
+        "port": "Blaine, WA",
+        "amount": 3937
+      },
+      {
+        "port": "Boston, MA",
+        "amount": 7660
+      },
+      {
+        "port": "Buffalo, NY",
+        "amount": 402
+      },
+      {
+        "port": "Champlain, NY",
+        "amount": 166
+      },
+      {
+        "port": "Charlotte Amalie,VI",
+        "amount": 2
+      },
+      {
+        "port": "Chicago, IL",
+        "amount": 49266
+      },
+      {
+        "port": "Cincinnati, OH",
+        "amount": 33
+      },
+      {
+        "port": "Dallas, TX",
+        "amount": 14590
+      },
+      {
+        "port": "Detroit, MI",
+        "amount": 16304
+      },
+      {
+        "port": "Ft. Lauderdale, FL",
+        "amount": 424
+      },
+      {
+        "port": "Highgate Springs, VT",
+        "amount": 71
+      },
+      {
+        "port": "Honolulu, HI",
+        "amount": 447550
+      },
+      {
+        "port": "Houston, TX",
+        "amount": 7325
+      },
+      {
+        "port": "Las Vegas, NV",
+        "amount": 3196
+      },
+      {
+        "port": "Lewiston, NY",
+        "amount": 163
+      },
+      {
+        "port": "Los Angeles, CA",
+        "amount": 102466
+      },
+      {
+        "port": "Lynden, WA",
+        "amount": 277
+      },
+      {
+        "port": "Miami, FL",
+        "amount": 6711
+      },
+      {
+        "port": "Minn./St. Paul, MN",
+        "amount": 3930
+      },
+      {
+        "port": "New York, NY",
+        "amount": 56389
+      },
+      {
+        "port": "Newark, NJ",
+        "amount": 7861
+      },
+      {
+        "port": "Niagara Falls, NY",
+        "amount": 976
+      },
+      {
+        "port": "Orlando, FL",
+        "amount": 618
+      },
+      {
+        "port": "Peace Bridge, NY",
+        "amount": 699
+      },
+      {
+        "port": "Philadelphia, PA",
+        "amount": 238
+      },
+      {
+        "port": "Phoenix, AZ",
+        "amount": 287
+      },
+      {
+        "port": "Pt Everglades, FL",
+        "amount": 18
+      },
+      {
+        "port": "Pt Huron, MI",
+        "amount": 462
+      },
+      {
+        "port": "Portland, OR",
+        "amount": 4090
+      },
+      {
+        "port": "San Antonio, TX",
+        "amount": 256
+      },
+      {
+        "port": "San Diego, CA",
+        "amount": 8281
+      },
+      {
+        "port": "San Francisco, CA",
+        "amount": 57421
+      },
+      {
+        "port": "San Juan, PR",
+        "amount": 89
+      },
+      {
+        "port": "Sanford, FL",
+        "amount": 2
+      },
+      {
+        "port": "Seattle, WA",
+        "amount": 18379
+      },
+      {
+        "port": "Tampa, FL",
+        "amount": 30
+      },
+      {
+        "port": "Washington, DC",
+        "amount": 13232
+      },
+      {
+        "port": "Other",
+        "amount": 43218
+      },
+      {
+        "port": "Unknown/Blank",
+        "amount": 2480
+      }
+    ]
+  }
+]

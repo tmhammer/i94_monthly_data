@@ -1,0 +1,19 @@
+{
+  "2003-02": {
+    "Western Europe": {
+      "business_visa_arrivals": 123098,
+      "pleasure_visa_arrivals": 448884,
+      "student_visa_arrivals": 1827
+    },
+    "Austria": {
+      "business_visa_arrivals": 1684,
+      "pleasure_visa_arrivals": 5241,
+      "student_visa_arrivals": 23
+    },
+    "Belgium": {
+      "business_visa_arrivals": 4002,
+      "pleasure_visa_arrivals": 5878,
+      "student_visa_arrivals": 47
+    }
+  }
+}

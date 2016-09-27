@@ -3,3 +3,5 @@ data.sqlite
 *.xls
 *.xlsx
 *.csv
+coverage
+spec/fixtures

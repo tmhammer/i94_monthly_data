@@ -1,0 +1,122 @@
+[
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 685995
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-02",
+    "total_arrivals": 790852
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-03",
+    "total_arrivals": 1135304
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-04",
+    "total_arrivals": 1311380
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-05",
+    "total_arrivals": 1367454
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-06",
+    "total_arrivals": 1249048
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-07",
+    "total_arrivals": 1611711
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-08",
+    "total_arrivals": 1539743
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-09",
+    "total_arrivals": 1374322
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-10",
+    "total_arrivals": 1545525
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-11",
+    "total_arrivals": 1098364
+  },
+  {
+    "i94_country_or_region": "Western Europe",
+    "ntto_groups": [
+      "Western Europe",
+      "Overseas"
+    ],
+    "date": "2015-12",
+    "total_arrivals": 1040527
+  },
+  {
+    "i94_country_or_region": "Austria",
+    "ntto_groups": [
+      "Western Europe",
+      "Visa Waiver",
+      "EU",
+      "OECD",
+      "Overseas"
+    ],
+    "date": "2015-01",
+    "total_arrivals": 11675
+  }
+]

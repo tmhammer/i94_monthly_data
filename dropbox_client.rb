@@ -17,8 +17,7 @@ class DropboxClientWrapper
 
   def download_file(path)
     contents = @client.get_file(path)
-    path.gsub!('/', '')
-    File.open(path, 'w') {|f| f.puts contents }
+    File.open(path.gsub('/', ''), 'w') {|f| f.puts contents }
   end
 end
 
