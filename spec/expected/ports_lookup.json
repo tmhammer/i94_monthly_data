@@ -4,171 +4,171 @@
       "ports_arrivals": [
         {
           "port": "Agana, GU",
-          "amount": 94210
+          "amount": 53064
         },
         {
           "port": "Atlanta, GA",
-          "amount": 2900
+          "amount": 1338
         },
         {
           "port": "Baltimore, MD",
-          "amount": 21
+          "amount": 3
         },
         {
           "port": "Blaine, WA",
-          "amount": 920
+          "amount": 555
         },
         {
           "port": "Boston, MA",
-          "amount": 129
+          "amount": 59
         },
         {
           "port": "Brownsville, TX",
-          "amount": 3
-        },
-        {
-          "port": "Calexico, CA",
-          "amount": 3
-        },
-        {
-          "port": "Charlotte Amalie,VI",
-          "amount": 5
-        },
-        {
-          "port": "Chicago, IL",
-          "amount": 14372
-        },
-        {
-          "port": "Cincinnati, OH",
-          "amount": 12
-        },
-        {
-          "port": "Dallas, TX",
-          "amount": 5597
-        },
-        {
-          "port": "Detroit, MI",
-          "amount": 15267
-        },
-        {
-          "port": "Eagle Pass, TX",
-          "amount": 2
-        },
-        {
-          "port": "El Paso, TX",
-          "amount": 13
-        },
-        {
-          "port": "Ft. Lauderdale, FL",
-          "amount": 2
-        },
-        {
-          "port": "Hidalgo, TX",
-          "amount": 9
-        },
-        {
-          "port": "Honolulu, HI",
-          "amount": 238579
-        },
-        {
-          "port": "Houston, TX",
-          "amount": 3202
-        },
-        {
-          "port": "Laredo, TX",
-          "amount": 38
-        },
-        {
-          "port": "Las Vegas, NV",
-          "amount": 6834
-        },
-        {
-          "port": "Los Angeles, CA",
-          "amount": 57162
-        },
-        {
-          "port": "Miami, FL",
-          "amount": 1152
-        },
-        {
-          "port": "Minn./St. Paul, MN",
-          "amount": 3077
-        },
-        {
-          "port": "New York, NY",
-          "amount": 25588
-        },
-        {
-          "port": "Newark, NJ",
-          "amount": 3198
-        },
-        {
-          "port": "Niagara Falls, NY",
-          "amount": 365
-        },
-        {
-          "port": "Nogales, AZ",
-          "amount": 3
-        },
-        {
-          "port": "Orlando, FL",
-          "amount": 43
-        },
-        {
-          "port": "Philadelphia, PA",
-          "amount": 45
-        },
-        {
-          "port": "Phoenix, AZ",
-          "amount": 49
-        },
-        {
-          "port": "Pt Everglades, FL",
-          "amount": 14
-        },
-        {
-          "port": "Portland, OR",
           "amount": 1
         },
         {
+          "port": "Calexico, CA",
+          "amount": 2
+        },
+        {
+          "port": "Charlotte Amalie,VI",
+          "amount": 1
+        },
+        {
+          "port": "Chicago, IL",
+          "amount": 7049
+        },
+        {
+          "port": "Cincinnati, OH",
+          "amount": 4
+        },
+        {
+          "port": "Dallas, TX",
+          "amount": 2879
+        },
+        {
+          "port": "Detroit, MI",
+          "amount": 8096
+        },
+        {
+          "port": "Eagle Pass, TX",
+          "amount": 1
+        },
+        {
+          "port": "El Paso, TX",
+          "amount": 4
+        },
+        {
+          "port": "Ft. Lauderdale, FL",
+          "amount": 0
+        },
+        {
+          "port": "Hidalgo, TX",
+          "amount": 8
+        },
+        {
+          "port": "Honolulu, HI",
+          "amount": 119377
+        },
+        {
+          "port": "Houston, TX",
+          "amount": 1577
+        },
+        {
+          "port": "Laredo, TX",
+          "amount": 8
+        },
+        {
+          "port": "Las Vegas, NV",
+          "amount": 3263
+        },
+        {
+          "port": "Los Angeles, CA",
+          "amount": 28198
+        },
+        {
+          "port": "Miami, FL",
+          "amount": 654
+        },
+        {
+          "port": "Minn./St. Paul, MN",
+          "amount": 1659
+        },
+        {
+          "port": "New York, NY",
+          "amount": 12593
+        },
+        {
+          "port": "Newark, NJ",
+          "amount": 1451
+        },
+        {
+          "port": "Niagara Falls, NY",
+          "amount": 174
+        },
+        {
+          "port": "Nogales, AZ",
+          "amount": 1
+        },
+        {
+          "port": "Orlando, FL",
+          "amount": 16
+        },
+        {
+          "port": "Philadelphia, PA",
+          "amount": 15
+        },
+        {
+          "port": "Phoenix, AZ",
+          "amount": 40
+        },
+        {
+          "port": "Pt Everglades, FL",
+          "amount": 3
+        },
+        {
+          "port": "Portland, OR",
+          "amount": 0
+        },
+        {
           "port": "San Antonio, TX",
-          "amount": 9
-        },
-        {
-          "port": "San Diego, CA",
-          "amount": 87
-        },
-        {
-          "port": "San Francisco, CA",
-          "amount": 35258
-        },
-        {
-          "port": "San Juan, PR",
-          "amount": 78
-        },
-        {
-          "port": "Sanford, FL",
           "amount": 5
         },
         {
+          "port": "San Diego, CA",
+          "amount": 36
+        },
+        {
+          "port": "San Francisco, CA",
+          "amount": 17043
+        },
+        {
+          "port": "San Juan, PR",
+          "amount": 53
+        },
+        {
+          "port": "Sanford, FL",
+          "amount": 3
+        },
+        {
           "port": "Seattle, WA",
-          "amount": 6318
+          "amount": 3426
         },
         {
           "port": "Tampa, FL",
-          "amount": 10
+          "amount": 9
         },
         {
           "port": "Washington, DC",
-          "amount": 4101
+          "amount": 1669
         },
         {
           "port": "Other",
-          "amount": 13702
+          "amount": 6765
         },
         {
           "port": "Unknown/Blank",
-          "amount": 348
+          "amount": 157
         }
       ]
     }

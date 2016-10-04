@@ -6,9 +6,9 @@ require './decapitalize'
 class PortsParser
   extend Decapitalize
 
-  NEW_PORTS_SHEETS = [16, 20, 24, 28, 32]
+  NEW_PORTS_SHEETS = [15, 19, 23, 27, 31]
   NEW_HEADERS_ROW = 8
-  OLD_PORTS_SHEETS = [14, 18, 22, 16]
+  OLD_PORTS_SHEETS = [13, 17, 21, 15]
   OLD_HEADERS_ROW = 7
 
   def self.parse(path)

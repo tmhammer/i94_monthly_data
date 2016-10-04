@@ -16,147 +16,147 @@
     "ports_arrivals": [
       {
         "port": "Agana, GU",
-        "amount": 269996
+        "amount": 52090
       },
       {
         "port": "Atlanta, GA",
-        "amount": 8612
+        "amount": 2398
       },
       {
         "port": "Baltimore, MD",
-        "amount": 38
+        "amount": 11
       },
       {
         "port": "Blaine, WA",
-        "amount": 3937
+        "amount": 1051
       },
       {
         "port": "Boston, MA",
-        "amount": 7660
+        "amount": 2454
       },
       {
         "port": "Buffalo, NY",
-        "amount": 402
+        "amount": 157
       },
       {
         "port": "Champlain, NY",
-        "amount": 166
+        "amount": 65
       },
       {
         "port": "Charlotte Amalie,VI",
-        "amount": 2
+        "amount": 0
       },
       {
         "port": "Chicago, IL",
-        "amount": 49266
+        "amount": 14481
       },
       {
         "port": "Cincinnati, OH",
-        "amount": 33
+        "amount": 5
       },
       {
         "port": "Dallas, TX",
-        "amount": 14590
+        "amount": 3859
       },
       {
         "port": "Detroit, MI",
-        "amount": 16304
+        "amount": 4245
       },
       {
         "port": "Ft. Lauderdale, FL",
-        "amount": 424
+        "amount": 83
       },
       {
         "port": "Highgate Springs, VT",
-        "amount": 71
+        "amount": 30
       },
       {
         "port": "Honolulu, HI",
-        "amount": 447550
+        "amount": 95533
       },
       {
         "port": "Houston, TX",
-        "amount": 7325
+        "amount": 1587
       },
       {
         "port": "Las Vegas, NV",
-        "amount": 3196
+        "amount": 1009
       },
       {
         "port": "Lewiston, NY",
-        "amount": 163
+        "amount": 86
       },
       {
         "port": "Los Angeles, CA",
-        "amount": 102466
+        "amount": 23982
       },
       {
         "port": "Lynden, WA",
-        "amount": 277
+        "amount": 84
       },
       {
         "port": "Miami, FL",
-        "amount": 6711
+        "amount": 892
       },
       {
         "port": "Minn./St. Paul, MN",
-        "amount": 3930
+        "amount": 935
       },
       {
         "port": "New York, NY",
-        "amount": 56389
+        "amount": 14793
       },
       {
         "port": "Newark, NJ",
-        "amount": 7861
+        "amount": 1553
       },
       {
         "port": "Niagara Falls, NY",
-        "amount": 976
+        "amount": 566
       },
       {
         "port": "Orlando, FL",
-        "amount": 618
+        "amount": 117
       },
       {
         "port": "Peace Bridge, NY",
-        "amount": 699
-      },
-      {
-        "port": "Philadelphia, PA",
-        "amount": 238
-      },
-      {
-        "port": "Phoenix, AZ",
-        "amount": 287
-      },
-      {
-        "port": "Pt Everglades, FL",
-        "amount": 18
-      },
-      {
-        "port": "Pt Huron, MI",
-        "amount": 462
-      },
-      {
-        "port": "Portland, OR",
-        "amount": 4090
-      },
-      {
-        "port": "San Antonio, TX",
         "amount": 256
       },
       {
+        "port": "Philadelphia, PA",
+        "amount": 65
+      },
+      {
+        "port": "Phoenix, AZ",
+        "amount": 86
+      },
+      {
+        "port": "Pt Everglades, FL",
+        "amount": 5
+      },
+      {
+        "port": "Pt Huron, MI",
+        "amount": 201
+      },
+      {
+        "port": "Portland, OR",
+        "amount": 665
+      },
+      {
+        "port": "San Antonio, TX",
+        "amount": 51
+      },
+      {
         "port": "San Diego, CA",
-        "amount": 8281
+        "amount": 1922
       },
       {
         "port": "San Francisco, CA",
-        "amount": 57421
+        "amount": 13007
       },
       {
         "port": "San Juan, PR",
-        "amount": 89
+        "amount": 22
       },
       {
         "port": "Sanford, FL",
@@ -164,23 +164,23 @@
       },
       {
         "port": "Seattle, WA",
-        "amount": 18379
+        "amount": 6053
       },
       {
         "port": "Tampa, FL",
-        "amount": 30
+        "amount": 2
       },
       {
         "port": "Washington, DC",
-        "amount": 13232
+        "amount": 4197
       },
       {
         "port": "Other",
-        "amount": 43218
+        "amount": 9495
       },
       {
         "port": "Unknown/Blank",
-        "amount": 2480
+        "amount": 556
       }
     ]
   }
